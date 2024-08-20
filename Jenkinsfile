@@ -16,6 +16,9 @@ pipeline {
                 gcc -o dist/main src/main.c
                 """
                 sh """
+                mkdir dist
+                """
+                sh """
                 dist/main
                 """
             }

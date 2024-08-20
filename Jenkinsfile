@@ -13,13 +13,10 @@ pipeline {
                 gcc --version
                 """
                 sh """
-                gcc -o dist/main src/main.c
+                gcc -o main src/main.c
                 """
                 sh """
-                mkdir dist
-                """
-                sh """
-                ./dist/main
+                ./main
                 """
             }
         }      

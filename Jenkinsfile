@@ -2,7 +2,7 @@ pipeline {
     agent {                     
         docker { 
             image 'gcc:9.4.0'
-            label 'ubuntu22'
+            label 'ubuntu-22.04'
         }
     }
     stages {

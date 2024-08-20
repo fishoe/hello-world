@@ -19,7 +19,7 @@ pipeline {
                 mkdir dist
                 """
                 sh """
-                dist/main
+                ./dist/main
                 """
             }
         }      

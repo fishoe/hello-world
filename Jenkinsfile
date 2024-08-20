@@ -12,15 +12,9 @@ pipeline {
                 sh """
                 gcc --version
                 """
-            }
-            steps {
-                echo "building"
                 sh """
                 gcc -o dist/main src/main.c
                 """
-            }
-            steps {
-                echo "building"
                 sh """
                 dist/main
                 """
@@ -28,3 +22,4 @@ pipeline {
         }      
     }
 }
+
